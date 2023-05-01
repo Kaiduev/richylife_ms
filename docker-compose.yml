@@ -1,0 +1,18 @@
+version: '3.9'
+services:
+  product:
+    extends:
+      file: product/docker-compose.yml
+      service: api
+  comment:
+    extends:
+      file: comment/docker-compose.yml
+      service: api
+  gateway:
+    extends:
+      file: gateway/docker-compose.yml
+      service: api
+  frontend:
+    extends:
+      file: richylife_ft/docker-compose.yml
+      service: frontend

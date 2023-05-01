@@ -1,0 +1,23 @@
+version: '3.9'
+
+services:
+
+  mongo_db:
+    container_name: db_container_comment
+    image: mongo:latest
+    restart: always
+    volumes:
+      - mongo_db:/data/db
+
+  api:
+    build: .
+    ports:
+      - 8001:8001
+    environment:
+      PORT: 8001
+      DB_URL: mongodb://mongo_db:27017/richylife_comment_ms
+    depends_on:
+      - mongo_db
+
+volumes:
+  mongo_db: {}

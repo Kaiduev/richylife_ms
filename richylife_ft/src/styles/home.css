@@ -1,0 +1,210 @@
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.mainContainer{
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    background: #cccccc;
+    padding: 40px 20px;
+}
+.navButtons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 100px;
+}
+.navButtons button{
+    height: 30px;
+    padding: 0 20px;
+    background: green;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.productAdd{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+.productAdd__textInput{
+    width: 100%;
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 10px;
+}
+
+.productAdd__submitButton{
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+.productList{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.productCard{
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    cursor: pointer;
+}
+.productCard__imageBox{
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.productCard__textBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+}
+.productCard__name{
+    font-weight: 600;
+    font-size: 20px;
+}
+.productCard__price{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+.productView{
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+
+.productView__imgBox{
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.productView__textBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+}
+.productView__name{
+    font-weight: 600;
+    font-size: 20px;
+}
+.productView__desc{
+    font-weight: 300;
+    font-size: 16px;
+}
+.productView__price{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+.productView__comments{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.productView__comment{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+}
+.productView__comment span{
+    font-weight: 300;
+    font-size: 16px;
+}
+.productView__comment p{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+.commentCreateBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+
+
+.productView__filtersBox{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.productView__filters{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.productViewFilters__button{
+    padding: 10px 20px;
+}
+.productViewFilters__button_selected{
+    border: 1px solid black;
+}
